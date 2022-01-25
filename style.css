@@ -1,15 +1,18 @@
 body {
   margin: 0;
 }
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
 .hearder {
   padding: 0%;
   display: flex;
   justify-content: space-between;
   background-color: black;
-}
-
-.player {
-  width: 100%;
 }
 
 .logo {
@@ -31,6 +34,40 @@ body {
 
 .info li {
   display: flex;
-  align-content: space-between;
-  flex-direction: ;
+}
+.player {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.player iframe,
+.player object,
+.player embed {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+}
+.hashtags {
+  display: flex;
+  font-size: small;
+  color: blue;
+  padding: 40;
+}
+.hashtags li {
+  margin-right: 5px;
+}
+
+.info .title {
+  display: flex;
+}
+.view {
+  display: flex;
+}
+.actions {
+  display: flex;
 }
