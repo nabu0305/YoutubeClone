@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-weight: bold;
 }
 
 button,
@@ -7,6 +8,7 @@ button:focus {
   border: none;
   cursor: pointer;
   outline: none;
+  background-color: transparent;
 }
 .hearder {
   padding: 0%;
@@ -66,9 +68,37 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
 }
-.view {
-  display: flex;
-}
 .actions {
   display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding-right: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+}
+.metadata {
+  display: flex;
+}
+.metadata img {
+  max-width: 50px;
+  border-radius: 70%;
+}
+.subscribers {
+  font-size: small;
+}
+.subscribe {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 40px;
+  margin-top: 5px;
 }
