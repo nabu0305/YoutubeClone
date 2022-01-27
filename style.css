@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-weight: bold;
+  list-style: none;
 }
 
 button,
@@ -29,11 +30,6 @@ button:focus {
 .icons {
   color: white;
 }
-
-.info {
-  list-style: none;
-}
-
 .info li {
   display: flex;
 }
@@ -53,6 +49,7 @@ button:focus {
   width: 80%;
   height: 80%;
   text-align: center;
+  padding-bottom: 0px;
 }
 .hashtags {
   display: flex;
@@ -101,4 +98,25 @@ button:focus {
   padding-right: 25px;
   height: 40px;
   margin-top: 5px;
+}
+
+.item img {
+  height: 100px;
+  width: 200px;
+  padding-bottom: 5px;
+}
+.item {
+  display: flex;
+}
+
+.item .info {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 라인수 */
+  -webkit-box-orient: vertical;
+  width: 200px;
+  white-space: normal;
+  line-height: 1.8em;
+  height: 3.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
